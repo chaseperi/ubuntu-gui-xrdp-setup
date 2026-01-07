@@ -3,7 +3,7 @@
 set -e
 
 echo "=== Updating system ==="
-sudo apt update
+sudo apt update && upgrade -y
 
 echo "=== Installing XRDP and GNOME session ==="
 sudo apt install -y xrdp gnome-session
@@ -29,3 +29,4 @@ echo "=== Restarting XRDP service ==="
 sudo systemctl restart xrdp
 
 echo "=== XRDP setup complete ==="
+
