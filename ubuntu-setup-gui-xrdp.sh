@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 echo "=== Updating system ==="
 sudo apt update && upgrade -y
 
@@ -29,4 +27,5 @@ echo "=== Restarting XRDP service ==="
 sudo systemctl restart xrdp
 
 echo "=== XRDP setup complete ==="
+
 
